@@ -1,0 +1,494 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+========================================= */
+
+.header {
+    background: #3e2723;
+    color: white;
+    padding: 15px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #ffcc80;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc80;
+}
+
+/* =========================================
+   CAREER HEADER
+========================================= */
+
+.career-header {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.career-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.career-intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    text-align: center;
+    color: #6b3e26;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* =========================================
+   CULTURE
+========================================= */
+
+.culture-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.culture-box {
+    background: white;
+
+    padding: 25px;
+
+    max-width: 650px;
+
+    margin: auto;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.culture-box:hover {
+    transform: translateY(-6px);
+}
+
+/* =========================================
+   JOBS
+========================================= */
+
+.jobs-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.job-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.job-card {
+    background: white;
+
+    padding: 20px;
+
+    width: 260px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.job-title {
+    color: #6b3e26;
+    margin-bottom: 10px;
+}
+
+.job-card ul {
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+/* =========================================
+   APPLY BUTTON
+========================================= */
+
+.apply-btn {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 10px 16px;
+
+    background: #6b3e26;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #d2691e;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.benefits-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-list li {
+    margin: 10px 0;
+
+    transition: 0.3s ease;
+}
+
+.benefits-list li:hover {
+    transform: translateX(6px);
+}
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.process-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.process-steps p {
+    margin: 10px 0;
+
+    transition: 0.3s ease;
+}
+
+.process-steps p:hover {
+    transform: translateX(6px);
+}
+
+/* =========================================
+   DOWNLOAD
+========================================= */
+
+.resume-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #6b3e26;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #d2691e;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.apply-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.application-form label {
+    font-weight: bold;
+}
+
+.application-form input,
+.application-form select {
+
+    padding: 10px;
+
+    width: 100%;
+    max-width: 320px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+
+    transition: 0.3s ease;
+}
+
+.application-form input:focus,
+.application-form select:focus {
+
+    outline: none;
+
+    border-color: #6b3e26;
+
+    box-shadow: 0 0 6px rgba(107, 62, 38, 0.2);
+}
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.submit-btn {
+    padding: 10px 18px;
+
+    background: #6b3e26;
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #d2691e;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #3e2723;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #ffcc80;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+
+    color: white;
+}
+
+/* =========================================
+   ICON STYLE
+========================================= */
+
+i {
+    margin-right: 5px;
+    color: #ffcc80;
+}
+
+.section-title i,
+.benefits-list li i {
+    color: #d2691e;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+input:focus,
+select:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #ffcc80;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .job-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .career-title {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .career-title {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+}

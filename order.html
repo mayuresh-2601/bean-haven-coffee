@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Haven Coffee | Order Coffee</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/logo.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/order.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <h1>
+                <i class="fa-solid fa-mug-hot"></i>
+                Bean Haven Coffee
+            </h1>
+
+        </div>
+
+        <nav class="navbar">
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a class="nav-link" href="home.html">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="about.html">
+                        <i class="fa-solid fa-circle-info"></i> About
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="products.html">
+                        <i class="fa-solid fa-mug-saucer"></i> Products
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="order.html">
+                        <i class="fa-solid fa-cart-shopping"></i> Order
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="blog.html">
+                        <i class="fa-solid fa-blog"></i> Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="career.html">
+                        <i class="fa-solid fa-briefcase"></i> Career
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="contact.html">
+                        <i class="fa-solid fa-phone"></i> Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ORDER SECTION -->
+
+    <section class="order-section">
+
+        <div class="container">
+
+            <h1 class="section-title">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Order Your Coffee
+            </h1>
+
+            <!-- <form class="order-form" action="payment.html" method="GET"></form> -->
+            <form class="order-form" action="payment.html">
+
+                <!-- NAME -->
+
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    Full Name
+                </label>
+                <input type="text" name="fullname" placeholder="Enter your name" required>
+
+                <!-- COFFEE -->
+
+                <label>
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Select Coffee
+                </label>
+
+                <select name="coffee" required>
+
+                    <option value="">
+                        Choose Coffee
+                    </option>
+
+                    <option>
+                        ☕ Espresso
+                    </option>
+
+                    <option>
+                        ☕ Latte
+                    </option>
+
+                    <option>
+                        ☕ Cappuccino
+                    </option>
+
+                    <option>
+                        ❄️ Iced Coffee
+                    </option>
+
+                </select>
+
+                <!-- QUANTITY -->
+
+                <label>
+                    <i class="fa-solid fa-hashtag"></i>
+                    Quantity
+                </label>
+
+                <input type="number" name="quantity" min="1" value="1" required>
+
+                <!-- ADDRESS -->
+
+                <label>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Delivery Address
+                </label>
+
+                <textarea name="address" placeholder="Enter delivery address" required></textarea>
+
+                <!-- BUTTON -->
+
+                <button class="order-btn" type="submit">
+
+                    <i class="fa-solid fa-credit-card"></i>
+                    Proceed to Payment
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+
+    <footer class="footer">
+
+        <p>
+            <i class="fa-solid fa-mug-hot"></i>
+            Bean Haven Coffee
+        </p>
+
+        <p>
+            Fresh Coffee • Friendly Atmosphere • Great Experience ☕
+        </p>
+
+        <div class="social-icons">
+
+            <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+
+            <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="#" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+
+            <a href="#" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Mayuresh Kasar Bean Haven Coffee
+        </p>
+
+    </footer>
+
+</body>
+
+<script src="js/order.js"></script>
+
+</html>

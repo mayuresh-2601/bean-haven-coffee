@@ -1,0 +1,361 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+========================================= */
+
+.header {
+    background: #3e2723;
+    color: white;
+    padding: 15px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #ffcc80;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc80;
+}
+
+/* =========================================
+   MENU HEADER
+========================================= */
+
+.menu-header {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.menu-description {
+    max-width: 650px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* =========================================
+   MENU SECTION
+========================================= */
+
+.menu-section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #6b3e26;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* =========================================
+   MENU GRID
+========================================= */
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* =========================================
+   MENU ITEM CARD
+========================================= */
+
+.menu-item {
+    background: white;
+
+    width: 240px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.menu-item img {
+    width: 100%;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.item-name {
+    color: #6b3e26;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #3e2723;
+    margin-bottom: 6px;
+}
+
+.item-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   ORDER BUTTON
+========================================= */
+
+.order-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #6b3e26;
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.order-btn:hover {
+    background: #d2691e;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #3e2723;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #ffcc80;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* =========================================
+   ICON STYLE
+========================================= */
+
+i {
+    margin-right: 5px;
+    color: #ffcc80;
+}
+
+.menu-title i,
+.section-title i,
+.item-name i,
+.item-price i,
+.order-btn i {
+    color: #d2691e;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+input:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #ffcc80;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .menu-title {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .menu-title {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+}

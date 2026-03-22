@@ -1,0 +1,347 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+========================================= */
+
+.header {
+    background: #3e2723;
+    color: white;
+    padding: 15px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #ffcc80;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc80;
+}
+
+/* =========================================
+   PAYMENT SECTION
+========================================= */
+
+.payment-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    text-align: center;
+    color: #6b3e26;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* =========================================
+   PAYMENT FORM
+========================================= */
+
+.payment-form {
+
+    background: white;
+
+    padding: 30px;
+
+    max-width: 420px;
+
+    margin: auto;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.payment-form:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   FORM LABELS
+========================================= */
+
+.payment-form label {
+    font-weight: bold;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.payment-form input {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.payment-form input:focus {
+
+    outline: none;
+
+    border-color: #6b3e26;
+
+    box-shadow: 0 0 6px rgba(107, 62, 38, 0.2);
+}
+
+/* =========================================
+   PAY BUTTON
+========================================= */
+
+.pay-btn {
+
+    padding: 10px 18px;
+
+    background: #6b3e26;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+
+    background: #d2691e;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PAYMENT ICONS
+========================================= */
+
+.payment-icons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.payment-icons i {
+    font-size: 28px;
+
+    margin: 0 8px;
+
+    color: #555;
+
+    transition: 0.3s ease;
+}
+
+.payment-icons i:hover {
+    transform: scale(1.2);
+    color: #6b3e26;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    background: #3e2723;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #ffcc80;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* =========================================
+   ICON STYLE
+========================================= */
+
+i {
+    margin-right: 5px;
+    color: #ffcc80;
+}
+
+.section-title i,
+label i,
+.pay-btn i {
+    color: #d2691e;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+input:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #ffcc80;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .payment-form {
+        width: 90%;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .section-title {
+        font-size: 20px;
+    }
+
+}

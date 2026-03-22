@@ -1,0 +1,447 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+========================================= */
+
+.header {
+    background: #3e2723;
+    color: white;
+    padding: 15px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #ffcc80;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc80;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    padding: 60px 20px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    margin-bottom: 15px;
+}
+
+/* Hero image */
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+
+    border-radius: 12px;
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-buttons {
+    margin-top: 10px;
+}
+
+.btn-order,
+.btn-visit,
+.btn-subscribe {
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    margin: 5px;
+
+    background: #6b3e26;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn-order:hover,
+.btn-visit:hover,
+.btn-subscribe:hover {
+
+    background: #d2691e;
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    text-align: center;
+
+    color: #6b3e26;
+
+    margin-bottom: 25px;
+
+    font-size: 26px;
+}
+
+/* =========================================
+   CARD COMMON STYLE
+========================================= */
+
+.drink-card,
+.feature-box,
+.review-box {
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.drink-card:hover,
+.feature-box:hover,
+.review-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   FEATURED DRINKS
+========================================= */
+
+.featured-drinks {
+    padding: 60px 20px;
+}
+
+.drink-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.drink-card {
+    width: 220px;
+    text-align: center;
+}
+
+.drink-card img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.drink-card:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-choose-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 240px;
+}
+
+/* =========================================
+   REVIEWS
+========================================= */
+
+.reviews {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.review-box {
+    margin: 12px auto;
+    width: 320px;
+}
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.subscribe-form {
+    margin-top: 15px;
+}
+
+.subscribe-form input {
+
+    padding: 10px;
+
+    width: 100%;
+    max-width: 260px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+
+    transition: 0.3s ease;
+}
+
+.subscribe-form input:focus {
+
+    outline: none;
+
+    border-color: #6b3e26;
+
+    box-shadow: 0 0 6px rgba(107, 62, 38, 0.2);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #3e2723;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #ffcc80;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* =========================================
+   ICON STYLE
+========================================= */
+
+i {
+    margin-right: 5px;
+    color: #ffcc80;
+}
+
+.section-title i {
+    color: #d2691e;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+input:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #ffcc80;
+}
+
+/* =========================================
+   SMOOTH SCROLL
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-content h2 {
+        font-size: 26px;
+    }
+
+    .review-box {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+}

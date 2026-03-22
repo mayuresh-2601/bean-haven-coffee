@@ -1,0 +1,429 @@
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+========================================= */
+
+.header {
+    background: #3e2723;
+    color: white;
+    padding: 15px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+/* underline animation */
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #ffcc80;
+
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffcc80;
+}
+
+/* =========================================
+   ABOUT HEADER
+========================================= */
+
+.about-header {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.about-intro {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    text-align: center;
+    color: #6b3e26;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* =========================================
+   STORY SECTION
+========================================= */
+
+.story-section {
+    padding: 60px 20px;
+}
+
+.story-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.story-image {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 12px;
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.story-image:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.story-text {
+    max-width: 500px;
+    font-size: 16px;
+}
+
+/* =========================================
+   MISSION & VISION
+========================================= */
+
+.mission-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.mission,
+.vision {
+    margin-bottom: 35px;
+}
+
+.mission-text,
+.vision-text {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* =========================================
+   SOURCING
+========================================= */
+
+.sourcing-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.coffee-list {
+    text-align: left;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.coffee-list li {
+    margin-bottom: 10px;
+
+    transition: 0.3s ease;
+}
+
+.coffee-list li:hover {
+    transform: translateX(6px);
+}
+
+/* =========================================
+   TEAM SECTION
+========================================= */
+
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+
+    padding: 20px;
+
+    width: 240px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   ROASTING
+========================================= */
+
+.roasting-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container img,
+.gallery-container video {
+    width: 100%;
+    max-width: 300px;
+
+    border-radius: 12px;
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover,
+.gallery-container video:hover {
+    transform: scale(1.06);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #3e2723;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #ffcc80;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+
+    color: white;
+}
+
+/* =========================================
+   ICON STYLE
+========================================= */
+
+i {
+    margin-right: 5px;
+    color: #ffcc80;
+}
+
+.section-title i,
+.coffee-list li i,
+.team-card p i {
+    color: #d2691e;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+input:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #ffcc80;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .story-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-title {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .about-title {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+}
