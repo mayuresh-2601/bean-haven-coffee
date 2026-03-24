@@ -1,15 +1,12 @@
-/* =========================================
-   ABOUT PAGE JAVASCRIPT
-   Simple Beginner Code
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("About page loaded successfully");
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -28,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) TEAM CARD CLICK MESSAGE
-    ========================================= */
+     */
 
     const teamCards = document.querySelectorAll(".team-card");
 
@@ -47,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        3) GALLERY IMAGE CLICK ZOOM EFFECT
-    ========================================= */
+     */
 
     const galleryImages = document.querySelectorAll(".gallery-container img");
 
@@ -68,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        4) SCROLL ANIMATION FOR SECTIONS
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 
@@ -94,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        5) INITIAL STYLE FOR ANIMATION
-    ========================================= */
+     */
 
     sections.forEach(function (section) {
 

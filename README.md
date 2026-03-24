@@ -10,13 +10,13 @@ This project simulates a modern café website with product listings, shopping ca
 
 The goal of this project was to strengthen frontend development skills and build a professional portfolio project suitable for internships, freelance work, and junior frontend roles.
 
----
+
 
 ## 🚀 Live Demo
 
 🔗 https://mayuresh-2601.github.io/bean-haven-coffee/
 
----
+
 
 ## 🎯 Key Features
 
@@ -30,7 +30,7 @@ The goal of this project was to strengthen frontend development skills and build
 ✔ Hover Animations & Transitions
 ✔ Fully Responsive Layout (Mobile Friendly)
 
----
+
 
 ## 🛠️ Technologies Used
 
@@ -40,7 +40,7 @@ The goal of this project was to strengthen frontend development skills and build
 * Google Fonts
 * Font Awesome Icons
 
----
+
 
 ## 📂 Project Structure
 
@@ -57,7 +57,7 @@ Bean-Haven-Coffee/
 │   └── logo.png
 └── README.md
 
----
+
 
 ## 🧠 JavaScript Functionalities Implemented
 
@@ -79,7 +79,6 @@ Bean-Haven-Coffee/
 * Responsive menu behavior
 * Media query-based design
 
----
 
 ## 📊 UI & UX Highlights
 
@@ -90,7 +89,7 @@ Bean-Haven-Coffee/
 * Mobile responsiveness
 * Consistent color theme
 
----
+
 
 ## 📈 What I Learned
 
@@ -102,7 +101,7 @@ Bean-Haven-Coffee/
 * Git & GitHub workflow
 * Deploying websites using GitHub Pages
 
----
+
 
 ## 🚀 How to Run This Project Locally
 
@@ -116,7 +115,7 @@ git clone https://github.com/mayuresh-2601/bean-haven-coffee.git
 
 No backend or dependencies required.
 
----
+
 
 ## 👨‍💻 Author
 
@@ -126,7 +125,7 @@ Frontend Developer | Web Development Enthusiast
 GitHub:
 https://github.com/mayuresh-2601
 
----
+
 
 ## ⭐ Support
 

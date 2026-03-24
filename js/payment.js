@@ -1,16 +1,13 @@
-/* =========================================
-   PAYMENT PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Payment page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) CARD NUMBER FORMAT (ADD SPACES)
-    ========================================= */
+     */
 
     const cardNumberInput = document.querySelector('input[name="cardnumber"]');
 
@@ -54,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        3) CVV LENGTH CHECK
-    ========================================= */
+     */
 
     const cvvInput = document.querySelector('input[name="cvv"]');
 
@@ -75,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        4) EXPIRY DATE FORMAT (MM/YY)
-    ========================================= */
+     */
 
     const expiryInput = document.querySelector('input[name="expiry"]');
 
@@ -102,9 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        5) FORM VALIDATION
-    ========================================= */
+     */
 
     const form = document.querySelector(".payment-form");
 
@@ -179,9 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        6) AUTO FOCUS FIRST FIELD
-    ========================================= */
+     */
 
     const firstInput = document.querySelector('input[name="cardname"]');
 

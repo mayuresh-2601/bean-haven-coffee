@@ -1,16 +1,13 @@
-/* =========================================
-   CAREER PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Career page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) JOB CARD CLICK MESSAGE
-    ========================================= */
+     */
 
     const jobCards = document.querySelectorAll(".job-card");
 
@@ -48,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        3) FORM VALIDATION
-    ========================================= */
+     */
 
     const form = document.querySelector(".application-form");
 
@@ -117,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        4) FILE TYPE CHECK (PDF ONLY)
-    ========================================= */
+     */
 
     const resumeInput = document.querySelector('input[type="file"]');
 
@@ -148,9 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 

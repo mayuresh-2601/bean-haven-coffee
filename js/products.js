@@ -1,16 +1,13 @@
-/* =========================================
-   PRODUCTS PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Products page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) MENU ITEM CLICK MESSAGE
-    ========================================= */
+     */
 
     const menuItems = document.querySelectorAll(".menu-item");
 
@@ -49,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        3) ORDER BUTTON CLICK MESSAGE
-    ========================================= */
+     */
 
     const orderButtons = document.querySelectorAll(".order-btn");
 
@@ -74,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        4) SIMPLE PRICE DISPLAY
-    ========================================= */
+     */
 
     const prices =
         document.querySelectorAll(".item-price");
@@ -92,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 

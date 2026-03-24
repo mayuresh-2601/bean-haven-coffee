@@ -1,16 +1,13 @@
-/* =========================================
-   CONTACT PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Contact page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) FORM VALIDATION
-    ========================================= */
+     */
 
     const form = document.querySelector(".contact-form");
 
@@ -92,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        3) PHONE NUMBER LENGTH CHECK
-    ========================================= */
+     */
 
     const phoneInput = document.querySelector('input[type="tel"]');
 
@@ -111,9 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        4) MAP IMAGE CLICK EFFECT
-    ========================================= */
+     */
 
     const mapImage = document.querySelector(".map-box img");
 
@@ -128,9 +125,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 

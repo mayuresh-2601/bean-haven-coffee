@@ -1,16 +1,13 @@
-/* =========================================
-   HOME PAGE JAVASCRIPT
-   Simple Beginner Code
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Home page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) HERO BUTTON CLICK MESSAGE
-    ========================================= */
+     */
 
     const orderBtn = document.querySelector(".btn-order");
     const visitBtn = document.querySelector(".btn-visit");
@@ -57,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        3) DRINK CARD CLICK MESSAGE
-    ========================================= */
+     */
 
     const drinkCards = document.querySelectorAll(".drink-card");
 
@@ -76,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        4) NEWSLETTER EMAIL VALIDATION
-    ========================================= */
+     */
 
     const subscribeForm = document.querySelector(".subscribe-form");
 
@@ -113,9 +110,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 

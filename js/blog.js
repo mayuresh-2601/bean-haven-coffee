@@ -1,15 +1,12 @@
-/* =========================================
-   BLOG PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Blog page loaded successfully");
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -28,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) READ MORE BUTTON MESSAGE
-    ========================================= */
+     */
 
     const readMoreButtons = document.querySelectorAll(".read-more");
 
@@ -47,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        3) BLOG CARD CLICK EFFECT
-    ========================================= */
+     */
 
     const blogCards = document.querySelectorAll(".blog-card");
 
@@ -66,9 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        4) POPULAR POSTS HOVER COLOR CHANGE
-    ========================================= */
+     */
 
     const popularPosts = document.querySelectorAll(".popular-list li");
 
@@ -85,9 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION FOR SECTIONS
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 

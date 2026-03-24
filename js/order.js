@@ -1,16 +1,13 @@
-/* =========================================
-   ORDER PAGE JAVASCRIPT
-   Beginner Friendly & Well Managed
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Order page loaded");
 
 
-    /* =========================================
+    /* 
        1) NAVIGATION ACTIVE LINK
-    ========================================= */
+     */
 
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -29,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =========================================
+    /* 
        2) QUANTITY LIMIT CHECK
-    ========================================= */
+     */
 
     const quantityInput = document.querySelector('input[name="quantity"]');
 
@@ -56,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        3) FORM VALIDATION
-    ========================================= */
+     */
 
     const form = document.querySelector(".order-form");
 
@@ -137,9 +134,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        4) AUTO FOCUS FIRST FIELD
-    ========================================= */
+     */
 
     const firstInput = document.querySelector('input[name="fullname"]');
 
@@ -150,9 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================
+    /* 
        5) SCROLL ANIMATION
-    ========================================= */
+     */
 
     const sections = document.querySelectorAll("section");
 
